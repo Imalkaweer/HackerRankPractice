@@ -7,6 +7,10 @@
 
 package datastructure.arraysds;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 /**
  * Date:2023-10-15
  * Author:imalkaweerasekara
@@ -14,18 +18,24 @@ package datastructure.arraysds;
 
 class ArraysDSQuestion1 {
     public static void main(String[] args) {
-
+        final List<Integer> integerList = Arrays.asList(1, 2, 3, 4);
+        ArraysDSQuestion1.reverseArray(integerList);
     }
 
     /**
-     * @param array
+     * return the reverse of input integer array
      *
-     * @return number of array
+     * @param integerList input List<Integer>
      *
-     * @throws IndexOutOfBoundsException
+     * @return List<Integer> of reversed array
      */
-    public int[] getNumberArray(final int[] array) throws IndexOutOfBoundsException {
+    public static List<Integer> reverseArray(List<Integer> integerList) {
 
-        return array;
+        List<Integer> integerList1 = new ArrayList<>();
+        for (int i = 0; i < integerList.size(); i++) {
+            integerList1.add(integerList.get(integerList.size() - (i + 1)));
+        }
+
+        return integerList1;
     }
 }
