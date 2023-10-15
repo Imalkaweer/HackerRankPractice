@@ -6,9 +6,10 @@
  */
 
 package datastructure.arraysds;
+
 /**
- Date:2023-10-15
- Author:imalkaweerasekara
+ * Date:2023-10-15
+ * Author:imalkaweerasekara
  */
 
 class ArraysDSQuestion1 {
@@ -17,12 +18,13 @@ class ArraysDSQuestion1 {
     }
 
     /**
-     *
      * @param array
-     * @return
+     *
+     * @return number of array
+     *
      * @throws IndexOutOfBoundsException
      */
-    public int[] getNumberArray(final int[] array) throws IndexOutOfBoundsException{
+    public int[] getNumberArray(final int[] array) throws IndexOutOfBoundsException {
 
         return array;
     }
